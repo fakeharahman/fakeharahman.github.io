@@ -6,11 +6,12 @@
     #nav {
         text-align: center;
         font-size: 30px;
-        background-color: aqua;
+        background-color: #FC766AFF;
         width: 100%;
         position: fixed;
         top: 0px;
         left: 0px;
+
 
 
 
@@ -19,7 +20,7 @@
     #nav div {
         width: 33%;
         float: left;
-        background-color: aqua;
+        background-color: #FC766AFF;
         overflow: auto;
         font-family: monospace;
 
@@ -27,28 +28,26 @@
 
     a {
         text-decoration: none;
+        color: #184A45FF;
 
 
     }
 
     a:hover {
-        background-color: darkcyan;
-
-    }
-
-
-
+        background-color: rgba(250, 53, 53, 0.692);
 
     }
 
     body {
-        background-image: url('haha.jpg');
+        background-image: url('white2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        color: antiquewhite;
+        color: darkslategray;
         overflow-x: hidden;
 
     }
+
+
 
     h1 {
         text-align: center;
@@ -57,6 +56,38 @@
 
         width: 100%;
 
+    }
+
+    #ball {
+        position: fixed;
+        border-radius: 50%;
+        background-color: blueviolet;
+        bottom: 50px;
+        right: 50px;
+        text-align: center;
+        height: 75px;
+        width: 75px;
+        vertical-align: middle;
+        padding-top: 5px;
+        animation: jump 2s;
+        animation-iteration-count: infinite;
+        font-family: helvetica;
+        color: antiquewhite;
+    }
+
+    @keyframes jump {
+        50% {
+            bottom: 200px;
+        }
+
+        100% {
+            bottom: 50px;
+        }
+    }
+
+    #relative {
+        top: 50px;
+        position: relative;
     }
 </style>
 
@@ -75,6 +106,15 @@
 
 <body>
     <h1> Supp boisss</h1>
+    <hr>
+    <div id="ball"><br>Click on <br>
+        me!</div>
+
+    <div id="relative">
+        <h2>Hi :)</h2>
+
+    </div>
+
 </body>
 
 </html>
