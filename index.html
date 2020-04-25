@@ -6,11 +6,13 @@
     #nav {
         text-align: center;
         font-size: 30px;
-        background-color: #FC766AFF;
+        background-color: darkblue;
         width: 100%;
         position: fixed;
         top: 0px;
         left: 0px;
+        opacity: 80%;
+        z-index: 10;
 
 
 
@@ -20,30 +22,38 @@
     #nav div {
         width: 33%;
         float: left;
-        background-color: #FC766AFF;
+        background-color: darkblue;
+        /* 92DFF3 */
         overflow: auto;
         font-family: monospace;
+
 
     }
 
     a {
         text-decoration: none;
-        color: #184A45FF;
+        color: white;
+
+        /* #184A45FF */
 
 
     }
 
     a:hover {
-        background-color: rgba(250, 53, 53, 0.692);
+        background-color: white;
+        color: darkblue;
 
     }
 
     body {
         background-image: url('white2.jpg');
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
         background-size: cover;
         color: darkslategray;
         overflow-x: hidden;
+
+
+
 
     }
 
@@ -61,7 +71,8 @@
     #ball {
         position: fixed;
         border-radius: 50%;
-        background-color: blueviolet;
+        background-color: darkblue;
+        opacity: 80%;
         bottom: 50px;
         right: 50px;
         text-align: center;
@@ -72,7 +83,8 @@
         animation: jump 2s;
         animation-iteration-count: infinite;
         font-family: helvetica;
-        color: antiquewhite;
+        color: white;
+
     }
 
     @keyframes jump {
@@ -86,8 +98,42 @@
     }
 
     #relative {
-        top: 50px;
+        top: 100px;
         position: relative;
+
+    }
+
+
+
+    #bbox {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-right: 100px;
+
+    }
+
+    .box {
+        height: 300px;
+        width: 350px;
+        background-color: rgb(75, 199, 240);
+        justify-content: center;
+        border-radius: 15%;
+        display: flex;
+
+    }
+
+    .box img {
+        max-width: 90%;
+        justify-self: center;
+
+
+        max-height: 100%;
+        display: block;
+        border-radius: 15%;
+        margin: 5% 5% 10% 5%;
     }
 </style>
 
@@ -106,15 +152,31 @@
 
 <body>
     <h1> Supp boisss</h1>
-    <hr>
+
     <div id="ball"><br>Click on <br>
         me!</div>
 
     <div id="relative">
         <h2>Hi :)</h2>
+        <div id="colm">
 
+            <div id="bbox">
+                <div class="box"><img src="kitten.jpg"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+
+            </div>
+            <br>
+            <br>
+            <div id="bbox">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+
+            </div>
+            <br>
+        </div>
     </div>
-
 </body>
 
 </html>
