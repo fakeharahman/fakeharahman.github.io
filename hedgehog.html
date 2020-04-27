@@ -35,9 +35,15 @@
     }
 
     body p {
-        margin: 50px 35vmin 0px 35vmin;
+        margin: 50px 20vmax 0px 20vmax;
         font-size: 30px;
         line-height: 30px;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+        p {
+            margin: 0px -20vmax 0px -20vmax;
+        }
     }
 
     header {
@@ -45,7 +51,7 @@
         text-align: left;
 
         font-family: 'Merriweather', serif;
-        margin: 50px 35vmin 0px 35vmin;
+        margin: 50px 20vmax 0px 20vmax;
         line-height: 40px;
     }
 
