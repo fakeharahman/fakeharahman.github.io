@@ -41,8 +41,9 @@
         background-image: url('assets/white2.jpg');
         background-repeat: repeat-y;
         background-size: cover;
-        color: darkslategray;
+        font-size: larger;
         overflow-x: hidden;
+        background-repeat: repeat-x;
 
     }
 
@@ -51,6 +52,8 @@
         text-align: center;
         position: absolute;
         padding-top: 10px;
+        font-family: 'Comic Neue', cursive;
+        color: black;
 
         width: 100%;
 
@@ -61,8 +64,8 @@
         border-radius: 50%;
         background-color: darkblue;
         opacity: 80%;
-        bottom: 50px;
-        right: 50px;
+        bottom: 40px;
+        right: 40px;
         text-align: center;
         height: 75px;
         width: 75px;
@@ -73,6 +76,8 @@
         font-family: helvetica;
         color: white;
         z-index: 9;
+        padding: 0px 5px 5px 5px;
+        vertical-align: middle;
 
     }
 
@@ -89,6 +94,8 @@
     #relative {
         top: 100px;
         position: relative;
+        /* margin: auto 40px auto 40ox; */
+        right: 0px;
 
     }
 
@@ -137,7 +144,6 @@
         justify-self: center;
         height: 90%;
         width: 90%;
-
         max-height: 100%;
         display: block;
         border-radius: 15%;
@@ -149,10 +155,28 @@
         text-align: center;
         position: relative;
     }
+
+    #balllink {
+        text-decoration: none;
+        color: white;
+        font-family: 'Baloo Paaji 2', cursive;
+
+    }
+
+    p {
+        font-size: 25px;
+        font-family: 'Baloo Paaji 2', cursive;
+        margin-left: 45px;
+        margin-right: 120px;
+        color: black;
+        line-height: 30px;
+    }
 </style>
 
 <head>
-
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Merriweather&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <div id="nav">
         <div><a href=./index.html>Home</a></div>
@@ -165,13 +189,16 @@
 </head>
 
 <body>
-    <h1> Supp boisss</h1>
-
-    <div id="ball"><br>Click on <br>
-        me!</div>
+    <h1> Cute animal appriciation page!</h1>
+    <a href="dragons.html" id="balllink">
+        <div id="ball"><br>Click on
+            me!</div>
+    </a>
 
     <div id="relative">
-        <h2>Hi :)</h2>
+        <p>Who doesnt like animals? I really wanted to make a webpage and this is
+            the topic i thought would be best. I really hope you like it! Click on
+            any of these animals to know more!</p>
         <div id="colm">
 
             <div id="bbox">
