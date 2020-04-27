@@ -13,10 +13,6 @@
         left: 0px;
         opacity: 80%;
         z-index: 10;
-
-
-
-
     }
 
     #nav div {
@@ -26,37 +22,29 @@
         /* 92DFF3 */
         overflow: auto;
         font-family: monospace;
-
-
     }
 
-    a {
+    #nav a {
         text-decoration: none;
         color: white;
 
         /* #184A45FF */
-
-
     }
 
-    a:hover {
+    #nav a:hover {
         background-color: white;
         color: darkblue;
 
     }
 
     body {
-        background-image: url('white2.jpg');
+        background-image: url('assets/white2.jpg');
         background-repeat: repeat-y;
         background-size: cover;
         color: darkslategray;
         overflow-x: hidden;
 
-
-
-
     }
-
 
 
     h1 {
@@ -84,6 +72,7 @@
         animation-iteration-count: infinite;
         font-family: helvetica;
         color: white;
+        z-index: 9;
 
     }
 
@@ -123,27 +112,52 @@
         border-radius: 15%;
         display: flex;
 
+
+
+    }
+
+    .box:hover {
+        animation: bigger 1s;
+        animation-fill-mode: forwards;
+
+    }
+
+    @keyframes bigger {
+
+
+        100% {
+            transform: scale(1.15);
+            /* height: 310px; */
+            /* width: 360px */
+        }
     }
 
     .box img {
         max-width: 90%;
         justify-self: center;
-
+        height: 90%;
+        width: 90%;
 
         max-height: 100%;
         display: block;
         border-radius: 15%;
-        margin: 5% 5% 10% 5%;
+        margin: 5% 5% 5% 5%;
+    }
+
+    footer {
+        bottom: -50px;
+        text-align: center;
+        position: relative;
     }
 </style>
 
 <head>
 
-
+    <link rel="stylesheet" href="./style.css">
     <div id="nav">
-        <div><a href=./home.html>Home</a></div>
-        <div><a href="#contact"> Contact</a></div>
-        <div><a href="#about">About</a></div>
+        <div><a href=./index.html>Home</a></div>
+        <div><a href="./contact.html"> Contact</a></div>
+        <div><a href=./about.html>About</a></div>
     </div>
 
 
@@ -161,22 +175,25 @@
         <div id="colm">
 
             <div id="bbox">
-                <div class="box"><img src="kitten.jpg"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <div class="box"><a href="kitty.html"><img src="assets/kitten.jpg">
+                    </a></div>
+                <div class="box"><a href="hammy.html"><img src="assets/hams.jpg"></a></div>
+                <div class="box"><a href="tortoise.html"><img src="assets/Tortoise-Anatomy.jpg"></a></div>
 
             </div>
             <br>
             <br>
             <div id="bbox">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+                <div class="box"><a href="hedgehog.html"><img src="assets/hedgehog.jpg"></a></div>
+                <div class="box"><a href="snake.html"><img src="assets/snakes.jpg"></a></div>
+                <div class="box"><a href="panda.html"><img src="assets/panda.jpg"></a></div>
 
             </div>
             <br>
         </div>
     </div>
 </body>
+<br><br><br>
+<footer>Made in appriciation of Cute animals</footer>
 
 </html>
