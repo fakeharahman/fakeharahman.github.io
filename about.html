@@ -4,6 +4,40 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        #nav {
+            text-align: center;
+            font-size: 30px;
+            background-color: darkblue;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            opacity: 80%;
+            z-index: 10;
+        }
+
+        #nav div {
+            width: 33%;
+            float: left;
+            background-color: darkblue;
+            /* 92DFF3 */
+            overflow: auto;
+            font-family: monospace;
+        }
+
+        #nav a {
+            text-decoration: none;
+            color: white;
+
+            /* #184A45FF */
+        }
+
+        #nav a:hover {
+            background-color: white;
+            color: darkblue;
+
+        }
+
         .collapsible {
             background-color: #777;
             color: white;
@@ -44,6 +78,11 @@
 </head>
 
 <body>
+    <div id="nav">
+        <div><a href=./index.html>Home</a></div>
+        <div><a href="./contact.html"> Contact</a></div>
+        <div><a href=./about.html>About</a></div>
+    </div>
 
 
 
